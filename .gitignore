@@ -87,3 +87,4 @@ jspm_packages/
 
 # Prisma
 prisma/migrations/
+.vercel
