@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Sistema de Controle de Estoque',
-  description: 'Sistema de gerenciamento de estoque',
+  description: 'Sistema completo para gerenciamento de estoque e projetos',
 };
 
 export default function RootLayout({
