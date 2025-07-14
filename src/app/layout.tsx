@@ -1,21 +1,21 @@
-import type { Metadata } from 'next';
+import './globals.css'
+import { Inter } from 'next/font/google'
 
-export const metadata: Metadata = {
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata = {
   title: 'Sistema de Controle de Estoque',
-  description: 'Sistema completo para gerenciamento de estoque e projetos',
-};
+  description: 'Sistema para gerenciamento e controle de estoque',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="pt-BR">
-      <body>
-        <script src="https://cdn.tailwindcss.com"></script>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
-  );
+  )
 }
